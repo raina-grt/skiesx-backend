@@ -28,7 +28,8 @@ from fastapi.middleware.cors import CORSMiddleware
 from typing import List
 
 
-
+from schama import router as support_router
+app.include_router(support_router)
 
 
 
