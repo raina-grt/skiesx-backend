@@ -1,6 +1,29 @@
-fastapi
-uvicorn
-sqlalchemy
-psycopg2-binary
-geopy
-python-dotenv
+
+fastapi==0.135.1
+uvicorn==0.42.0
+
+sqlalchemy==2.0.48
+psycopg2-binary==2.9.11
+
+jinja2>=3.1.2
+
+starlette>=0.52.1
+pydantic>=2.12.5
+anyio>=4.12.1
+typing-extensions>=4.15.0
+typing-inspection>=0.4.2
+annotated-doc>=0.0.4
+annotated-types>=0.7.0
+
+geopy==2.4.1
+geographiclib>=2.1
+
+click>=8.3.1
+h11>=0.16.0
+idna>=3.11
+greenlet>=3.3.2
+
+python-dotenv==1.2.2
+
+# Standard library modules (no need to install)
+# json, os, string, random, datetime, zoneinfo
