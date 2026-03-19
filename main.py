@@ -26,8 +26,7 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
 
 from typing import List
-
-
+from .database import engine, Base
 
 
 templates = Jinja2Templates(directory="templates")
@@ -43,6 +42,9 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+Base.metadata.create_all(bind=engine)
+
 
 
 
