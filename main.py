@@ -26,7 +26,7 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
 
 from typing import List
-from .database import engine, Base
+from database import engine, Base
 
 
 templates = Jinja2Templates(directory="templates")
